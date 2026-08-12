@@ -1,40 +1,20 @@
-# CymbalMart-Shopping-Agent
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-An AI-powered party planning and shopping assistant built using **Google AI Studio** and **Gemini 3.6 Flash**. 
+# Run and deploy your AI Studio app
 
-This application automates party planning by converting high-level event details into curated, budget-conscious shopping lists organized by store departments, along with real-time budget tracking and customization.
+This contains everything you need to run your app locally.
 
----
+View your app in AI Studio: https://ai.studio/apps/c3b97244-0cf5-4fd7-82b8-dd3f6592c235
 
-## Features
+## Run Locally
 
-- **Event Customization:** Define party themes, guest counts, target budgets, and dietary restrictions.
-- **Dynamic Quantity Scaling:** Automatically scales ingredient, tableware, and decor quantities based on guest headcounts.
-- **Budget Optimization:** Real-time budget recalculations and store department aisle recommendations (Food & Beverage, Decor, Favors & Games).
-- **Interactive UI:** Built-in starter templates, printable views, and CSV export capabilities.
+**Prerequisites:**  Node.js
 
----
 
-## Critical User Journey (CUJ)
-
-1. **Define Event:** Host specifies party type, theme, total budget, and guest count.
-2. **Review List:** Gemini generates a department-grouped shopping list aligned with budget constraints.
-3. **Refine & Finalize:** Host adjusts constraints, updates item preferences, and finalizes the party plan.
-
----
-
-## Tech Stack
-
-- **Framework:** React / TypeScript / Vite
-- **AI Engine:** Google Gemini 3.6 Flash (via Google AI Studio)
-- **Styling:** Tailwind CSS
-
----
-
-## How to Run Locally
-
-1. Download or clone this repository.
-2. Open your terminal in the project directory.
-3. Install dependencies:
-   ```bash
-   npm install
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
